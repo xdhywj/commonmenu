@@ -1,3 +1,6 @@
 <resources>
-    <string name="app_name">My library</string>
+    <string name="commonmenu_item_index">首页</string>
+    <string name="commonmenu_item_search">搜索</string>
+    <string name="commonmenu_item_order">我的订单</string>
+    <string name="commonmenu_item_favorite">我的收藏</string>
 </resources>
