@@ -40,6 +40,6 @@
     setDefaultPopupMenu(String pageName, Drawable drawable)
 
 # 效果图
-![image](https://github.com/xdhywj/commonmenu/blob/master/screenshots/commonmenu_actionbar_default.png "actionBar Menu 默认")
-![image](https://github.com/xdhywj/commonmenu/blob/master/screenshots/commonmenu_actionbar_customized.png "actionBar Menu 自定义")
-![image](https://github.com/xdhywj/commonmenu/blob/master/screenshots/commonmenu_view_default.png "自定义view")
+<img src="screenshots/commonmenu_actionbar_default.png"/>
+<img src="screenshots/commonmenu_actionbar_customized.png"/>
+<img src="screenshots/commonmenu_view_default.png"/>
