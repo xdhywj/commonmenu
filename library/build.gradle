@@ -1,17 +1,16 @@
 apply plugin: 'com.android.library'
+apply plugin: 'maven'
+apply plugin: 'com.novoda.bintray-release'
 
 android {
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
-
     defaultConfig {
         minSdkVersion 16
         targetSdkVersion 25
         versionCode 1
         versionName "1.0"
-
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-
     }
     buildTypes {
         release {
@@ -19,6 +18,17 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    lintOptions {
+        abortOnError false
+    }
+}
+publish {
+    userOrg = 'xdhywj'
+    groupId = 'com.xdhywj.commonmenu'
+    artifactId = 'commonmenu'
+    version = '0.0.1'
+    description = 'Super duper easy way to release your Android and other artifacts to bintray'
+    website = "https://github.com/xdhywj/commonmenu"
 }
 
 dependencies {
@@ -29,3 +39,4 @@ dependencies {
     compile 'com.android.support:appcompat-v7:25.3.1'
     testCompile 'junit:junit:4.12'
 }
+

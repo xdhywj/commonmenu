@@ -107,8 +107,8 @@ public class CommonMenuItemView extends View implements View.OnClickListener{
 
     /**
      * 业务方可以自己设置点击的图片
-     * @param pageName
-     * @param drawableResId
+     * @param pageName p
+     * @param drawableResId d
      */
     public void setDefaultPopupMenu(String pageName, @DrawableRes int drawableResId) {
         if (mPopupWindowManager != null) {
@@ -123,8 +123,8 @@ public class CommonMenuItemView extends View implements View.OnClickListener{
 
     /**
      * 业务方可以自己设置点击的图片
-     * @param pageName
-     * @param drawableResId
+     * @param pageName p
+     * @param drawableResId d
      */
     public void setTakeoutPopupMenu(String pageName, @DrawableRes int drawableResId) {
         if (mPopupWindowManager != null) {
@@ -139,9 +139,9 @@ public class CommonMenuItemView extends View implements View.OnClickListener{
 
     /**
      * 业务方可以自己设置点击的图片
-     * @param pageName
-     * @param item
-     * @param drawableResId
+     * @param pageName p
+     * @param item u
+     * @param drawableResId d
      */
     public void setCustomizedPopupMenu(String pageName, CommonMenuItem item, @DrawableRes int drawableResId) {
         if (mPopupWindowManager != null) {
@@ -154,12 +154,6 @@ public class CommonMenuItemView extends View implements View.OnClickListener{
         setCustomizedListPopupMenu(pageName, items, 0);
     }
 
-    /**
-     * 业务方可以自己设置点击的图片
-     * @param pageName
-     * @param items
-     * @param drawableResId
-     */
     public void setCustomizedListPopupMenu(String pageName, List<CommonMenuItem> items, @DrawableRes int drawableResId) {
         if (mPopupWindowManager != null) {
             mPopupWindowManager.setParams(pageName, CommonMenuListManager.getCommonMenuList(mContext, CommonMenuListManager.STYLE_CUSTOMIZED_LIST, items));

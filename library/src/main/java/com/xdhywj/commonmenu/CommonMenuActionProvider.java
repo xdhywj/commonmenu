@@ -63,8 +63,8 @@ public class CommonMenuActionProvider extends ActionProvider implements View.OnC
 
     /**
      * 业务方可以自己设置点击的图片
-     * @param pageName
-     * @param drawable
+     * @param pageName pageName
+     * @param drawable drawable
      */
     public void setDefaultPopupMenu(String pageName, Drawable drawable) {
         if (mPopupWindowManager != null) {
@@ -81,8 +81,8 @@ public class CommonMenuActionProvider extends ActionProvider implements View.OnC
 
     /**
      * 业务方可以自己设置点击的图片
-     * @param pageName
-     * @param drawable
+     * @param pageName pageName
+     * @param drawable drawable
      */
     public void setTakeoutPopupMenu(String pageName, Drawable drawable) {
         if (mPopupWindowManager != null) {
@@ -100,9 +100,9 @@ public class CommonMenuActionProvider extends ActionProvider implements View.OnC
 
     /**
      * 业务方可以自己设置点击的图片
-     * @param pageName
-     * @param item
-     * @param drawable
+     * @param pageName pageName
+     * @param item     item
+     * @param drawable drawable
      */
     public void setCustomizedPopupMenu(String pageName, CommonMenuItem item, Drawable drawable) {
         if (mPopupWindowManager != null) {
@@ -119,9 +119,9 @@ public class CommonMenuActionProvider extends ActionProvider implements View.OnC
 
     /**
      * 业务方可以自己设置点击的图片
-     * @param pageName
-     * @param items
-     * @param drawable
+     * @param pageName pageName
+     * @param items    items
+     * @param drawable drawable
      */
     public void setCustomizedListPopupMenu(String pageName, List<CommonMenuItem> items, Drawable drawable) {
         if (mPopupWindowManager != null) {

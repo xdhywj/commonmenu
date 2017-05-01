@@ -17,47 +17,21 @@ public class CommonMenuListManager {
     public static final int STYLE_CUSTOMIZED_ONE = 2;
     public static final int STYLE_CUSTOMIZED_LIST = 3;
 
-    /**
-     * 默认的4个menu
-     *
-     * @param context
-     * @return
-     */
     public static List<CommonMenuItem> getDefaultMenu(Context context) {
         return new CommonMenuBuilder(context).appendIndex().appendSearch().
                 appendOrder().appendFavorite().builder();
     }
 
-    /**
-     * 针对外卖去掉搜索
-     *
-     * @param context
-     * @return
-     */
     public static List<CommonMenuItem> getTakeoutMenu(Context context) {
         return new CommonMenuBuilder(context).appendIndex().appendOrder().
                 appendFavorite().builder();
     }
 
-    /**
-     * 自定义，只能添加一个
-     *
-     * @param context
-     * @param otherMenu
-     * @return
-     */
     public static List<CommonMenuItem> getCustomizedMenu(Context context, CommonMenuItem otherMenu) {
         return new CommonMenuBuilder(context).appendIndex().appendSearch().
                 appendOrder().appendFavorite().appendCustomized(otherMenu).builder();
     }
 
-    /**
-     * 自定义，可添加多个(PM不让这样做，但是sdk得这样写)
-     *
-     * @param context
-     * @param items
-     * @return
-     */
     public static List<CommonMenuItem> getCustomizedMenuList(Context context, List<CommonMenuItem> items) {
         return new CommonMenuBuilder(context).appendCustomizedList(items).builder();
     }
