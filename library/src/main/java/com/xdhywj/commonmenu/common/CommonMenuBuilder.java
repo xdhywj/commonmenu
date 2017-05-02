@@ -14,10 +14,10 @@ import java.util.List;
 
 public class CommonMenuBuilder {
 
-    public static final String JUMP_URL_INDEX = "imeituan://www.meituan.com/home";
-    public static final String JUMP_URL_SEARCH = "imeituan://www.meituan.com/search/home?entrance=7";
-    public static final String JUMP_URL_ORDER = "imeituan://www.meituan.com/ordercenterlist";
-    public static final String JUMP_URL_FAVORITE = "imeituan://www.meituan.com/collection/list";
+    public static final String JUMP_URL_INDEX = "*****";
+    public static final String JUMP_URL_SEARCH = "*****";
+    public static final String JUMP_URL_ORDER = "*****";
+    public static final String JUMP_URL_FAVORITE = "*****";
 
     private Context mContext;
     private List<CommonMenuItem> mMenuItemList = new ArrayList<>();
